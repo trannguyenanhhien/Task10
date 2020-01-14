@@ -1,0 +1,56 @@
+<div class="text-center">
+  <h1 translate>Products</h1>
+</div>
+<div class="container d-flex justify-content-center">
+  <div class="row">
+    <div class="col-4">
+      <h3>Addidas</h3>
+      <table class="table">
+        <tbody  *ngFor="let pd of p_addidas">
+          <div class="col-12">
+            <tr>
+              <th rowspan="2"><a routerLink="/product/{{pd.id}}"><img src="{{ pd.img }}" width="100px" height="100px"></a></th>
+              <th>{{ pd.id }}</th>
+            </tr>
+            <tr>
+              <td>{{ pd.name }}</td>
+            </tr>
+          </div>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-4">
+      <h3>Nike</h3>
+      <table class="table">
+        <tbody  *ngFor="let pd of p_nike">
+          <div class="col-12">
+            <tr>
+              <th rowspan="2"><a routerLink="/product/{{pd.id}}"><img src="{{ pd.img }}" width="100px" height="100px"></a></th>
+              <th>{{ pd.id }}</th>
+            </tr>
+            <tr>
+              <td>{{ pd.name }}</td>
+            </tr>
+          </div>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-4">
+      <h3>Balencia</h3>
+      <table class="table">
+        <tbody  *ngFor="let pd of p_balen">
+          <div class="col-12">
+            <tr>
+              <th rowspan="2"><a routerLink="/product/{{pd.id}}"><img src="{{ pd.img }}" width="100px" height="100px"></a></th>
+              <th>{{ pd.id }}</th>
+            </tr>
+            <tr>
+              <td>{{ pd.name }}</td>
+            </tr>
+          </div>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
