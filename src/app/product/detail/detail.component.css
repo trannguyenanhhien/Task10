@@ -1,0 +1,16 @@
+.product-details-row1-col1 img {
+  border: 1px solid rgb(224, 224, 224);
+  padding: 0.5em;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.details-tab {
+  border: 1px solid rgb(224, 224, 224);
+}
+
+#tab-1 {
+  margin: 30px;
+}

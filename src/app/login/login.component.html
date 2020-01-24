@@ -1,28 +1,59 @@
+<div id="wrapper">
+  <div id="wrappertop"></div>
 
-<div data-vide-bg="video/keyboard">
-	<div class="main-container">
-		<!--header-->
-		<div class="text-center header-w3l">
-			<h1>Login Form</h1>
-		</div>
-		<div class="main-content-agile">
-			<div class="text-center w3ls-pro">
-				<h2>Login Now</h2>
-			</div>
-			<div class="sub-main-w3ls">
-				<form action="login" method="post">
-					<input class="form-control" placeholder="Enter your E-mail" name="enter mail" type="email" required=""><br>
-					<span class="icon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-					<input class="form-control" placeholder="Enter Password" name="Password" type="password" required="">
-					<span class="icon2"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
-					<div class="checkbox-w3">
-						<span class="check-w3"><input type="checkbox" />Remember Me</span>
-						<a href="login">Forgot Password?</a>
-						<div class="clear"></div>
-					</div>
-					<input class="icon3 form-control" type="submit" value="Đăng Nhập">
-				</form>
-			</div>
-		</div>
-	</div>
+  <div id="wrappermiddle">
+
+    <h2>Login</h2>
+
+    <div id="username_input">
+
+      <div id="username_inputleft"></div>
+
+      <div id="username_inputmiddle">
+      <form>
+        <input type="text" name="link" id="url" value="E-mail Address" onclick="this.value = ''">
+        <img id="url_user" src="../../assets/images/mailicon.png" alt="">
+      </form>
+      </div>
+
+      <div id="username_inputright"></div>
+
+    </div>
+
+    <div id="password_input">
+
+      <div id="password_inputleft"></div>
+
+      <div id="password_inputmiddle">
+      <form>
+        <input type="password" name="link" id="url" value="Password" onclick="this.value = ''">
+        <img id="url_password" src="../../assets/images/passicon.png" alt="">
+      </form>
+      </div>
+
+      <div id="password_inputright"></div>
+
+    </div>
+
+    <div id="submit">
+      <form>
+      <input type="image" src="../../assets/images/submit_hover.png" id="submit1" value="Sign In">
+      <input type="image" src="../../assets/images/submit.png" id="submit2" value="Sign In">
+      </form>
+    </div>
+
+
+    <div id="links_left">
+
+    <a href="#">Forgot your Password?</a>
+
+    </div>
+
+    <div id="links_right"><a href="#">Not a Member Yet?</a></div>
+
+  </div>
+
+  <div id="wrapperbottom"></div>
 </div>
+
+<app-footer></app-footer>

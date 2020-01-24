@@ -1,0 +1,108 @@
+img.r-img{
+  border-radius:30em;
+  }
+/*----special-products----*/
+.special-products{
+  background: #FFF;
+  margin: 2em 15px 2em;
+  padding: 1.2em 1.5em;
+  }
+  .s-products-head-left{
+  float:left;
+  }
+  .s-products-head-left h3{
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 600;
+  }
+  .s-products-head-left h3 span{
+  color:#F2262C;
+  }
+  .s-products-head-right{
+  float:right;
+  }
+  .s-products-head-right a{
+  color:#504F4F;
+  font-style:italic;
+  }
+
+  .s-products-head-right a span{
+  width:5px;
+  height:8px;
+  display:inline-block;
+  background:url(../../assets/images/arrow1.png) no-repeat 0px 0px;
+  margin-right:0.2em;
+  }
+  /*----*/
+
+  .special-products-grid{
+  border: 1px solid #E2E2E2;
+  padding:0.5em 0.5em 1em 0.5em;
+  border-radius:0.3em;
+  transition:0.5s all;
+  }
+  .special-products-grid:hover{
+  border:1px solid #FE3026;
+  }
+  .product-here img{
+  width: 100%;
+  border-bottom: 1px solid #EEE;
+  display: block;
+  margin-bottom: 0.5em;
+  }
+  .special-products-grid h4{
+  width:80%;
+  margin:0 auto 0.5em;
+  }
+  .special-products-grid h4 a{
+  font-weight: 600;
+  color: #2E2E2E;
+  margin: 0 0 1em;
+  display: block;
+  }
+  .special-products-grid h4 a:hover{
+  text-decoration:none;
+  color:#FE3026;
+  }
+  .product-btn{
+  background:#FE2F18;
+  padding:0.4em 1em;
+  color:#fff;
+  border-radius:30em;
+  border: 1px solid #B64E30;
+  border-top: 2px solid #B64E30;
+  display: inline-block;
+  }
+  .product-btn:hover{
+  text-decoration: none;
+  background: #5B5B5B;
+  border: 1px solid #5B5B5B;
+  border-top: 2px solid #5B5B5B;
+  }
+  .product-btn span{
+  padding-right:0.3em;
+  margin-right:0.3em;
+  border-right:1px solid #888;
+  display:inline-block;
+  }
+  .product-btn:hover{
+  text-decoration:none;
+  color:#FFf;
+  }
+  .product-btn label{
+  width:12px;
+  height:12px;
+  display:inline-block;
+  background:url(../../assets/images/arrow.png) no-repeat 0px 0px;
+  vertical-align:middle;
+  margin-left:0.2em;
+  }
+  .special-products-grid{
+  margin:0px 15px 15px 0;
+  width: 23.7%;
+  }
+  .special-products-grid:nth-child(4),.special-products-grid:nth-child(8){
+  margin-right:0px;
+  }

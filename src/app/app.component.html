@@ -1,80 +1,40 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" routerLink="/home">GonJR</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/home']">{{ 'Home' | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/product">{{ 'Product' | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/contact">{{ 'Contact' | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/login">{{ 'Login' | translate }}</a>
+<div class="container">
+  <!----top-header---->
+  <div class="top-header">
+    <div class="logo">
+      <a [routerLink]="['/home']"><img src="../assets/images/logo.png" title="barndlogo" /></a>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+  <!----//top-header---->
+  <!---top-header-nav---->
+  <div class="top-header-nav">
+  <!----start-top-nav---->
+   <nav class="top-nav main-menu">
+     <div class="row">
+     <div class="col-8">
+      <ul class="top-nav">
+        <li><a class="nav-link" [routerLink]="['/home']">{{ 'Home' | translate }}</a></li>
+        <li><a class="nav-link" routerLink="/product">{{ 'Product' | translate }}</a></li>
+        <li><a class="nav-link" routerLink="/contact">{{ 'Contact' | translate }}</a></li>
+        <li><a class="nav-link" routerLink="/login">{{ 'Login' | translate }}</a></li>
+      </ul>
+     </div>
+     <div class="col-4">
+       <ul class="nav">
+      <li>
+        <div class="dropdown">
+        <a class="nav-link">{{ 'Translate' | translate }}</a><span> </span>
+        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton ">
+          <button class="dropdown-item colorStyle " (click)="useLanguage1('en') ">English</button>
+          <button class="dropdown-item colorStyle " (click)="useLanguage2('vi') ">Vietnam</button>
+        </div>
+        </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="{{ 'Search' | translate }}" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" type="submit">{{ 'Search' | translate }}</button>
-    </form>
-    <div>
-      <button class="btn btn-info my-2 mr-sm-2" (click)="useLanguage1('en')">en</button>
-      <button class="btn btn-info my-2 mr-sm-2" (click)="useLanguage2('vi')">vi</button>
+     </div>
     </div>
+    </nav>
   </div>
-</nav>
+</div>
 <router-outlet></router-outlet>
-
-<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-  <a class="navbar-brand" routerLink="home">NLe</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-          <li class="nav-item mx-3" routerLinkActive="active">
-              <a class="nav-link" routerLink="home"> <i class="fa fa-home" aria-hidden="true"></i> {{ 'Home' | translate }} <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item mx-3" routerLinkActive="active">
-              <a class="nav-link" routerLink="product"> <i class="fa fa-product-hunt" aria-hidden="true"></i> {{ 'Product' | translate }} </a>
-          </li>
-          <li class="nav-item mx-3" routerLinkActive="active">
-              <a class="nav-link" routerLink="/contact"> <i class="fa fa-phone" aria-hidden="true"></i> {{ 'Contact' | translate }} </a>
-          </li>
-          <li class="nav-item mx-3" routerLinkActive="active">
-              <a class="nav-link" routerLink="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> {{ 'Login' | translate }} </a>
-          </li>
-      </ul>
-      <form class="form-inline my-2  mx-3 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-danger my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-
-      </form>
-
-      <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{'Language'|translate }}
-          </a>
-
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <button class="btn btn-success mx-1" (click)="switchLanguage('en')">
-                  en
-              </button>
-
-              <button class="btn btn-success mx-1" (click)="switchLanguage('vi')">
-                  vie
-              </button>
-          </div>
-      </div>
-
-
-  </div>
-</nav>
-<router-outlet></router-outlet> -->

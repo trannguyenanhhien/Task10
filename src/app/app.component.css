@@ -1,0 +1,20 @@
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  top: 80%;
+}
+/*----top-header---*/
+.top-header{
+  padding:2em 0;
+  }
+  .logo{
+  float: left;
+  }
+  .top-header-info{
+  float:right;
+  }
+  .cart-details ul li{
+  list-style:none;
+  }
+  .cart-details ul{
+  margin:0;padding:0;
+  }
